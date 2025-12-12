@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <div class="text-light text-sm">Secure Checkout</div>
+        </div>
+    </header>
+
+    <section class="section-padding">
+        <div class="container grid grid-3 gap-lg" style="grid-template-columns: 2fr 1fr;">
+
+            <!-- Checkout Form -->
+            <div>
+                <h2 class="mb-md">Billing Details</h2>
+                <form action="#" novalidate class="card mb-lg">
+                    <div class="grid grid-2 gap-sm mb-sm">
+                        <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Street Address</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    <div class="grid grid-3 gap-sm mb-sm">
+                        <div class="form-group">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">State</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Zip Code</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                    </div>
+                </form>
+
+                <h2 class="mb-md">Payment</h2>
+                <div class="card">
+                    <div class="form-group">
+                        <label class="form-label">Card Number</label>
+                        <input type="text" class="form-input" placeholder="0000 0000 0000 0000">
+                    </div>
+                    <div class="grid grid-2 gap-sm">
+                        <div class="form-group">
+                            <label class="form-label">Expiry</label>
+                            <input type="text" class="form-input" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">CVC</label>
+                            <input type="text" class="form-input" placeholder="123">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-md" style="width: 100%;">Place Order ($1,028.00)</button>
+                    <div class="text-center mt-sm text-xs text-light">
+                        <p>🔒 Payments are secure and encrypted.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div>
+                <div class="card" style="position: sticky; top: 100px;">
+                    <h3 class="mb-md">In Your Cart (2)</h3>
+
+                    <div class="flex gap-sm mb-md items-center">
+                        <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Thumb" style="width: 50px; height: 50px; border-radius: 4px; object-fit: cover;">
+                        <div>
+                            <div class="font-bold text-sm">Minimalist IG Bundle</div>
+                            <div class="text-xs text-light">x1</div>
+                        </div>
+                        <div class="ml-auto font-bold text-sm">$29.00</div>
+                    </div>
+
+                    <div class="flex gap-sm mb-lg items-center">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                            alt="Thumb" style="width: 50px; height: 50px; border-radius: 4px; object-fit: cover;">
+                        <div>
+                            <div class="font-bold text-sm">Social Media Mgmt</div>
+                            <div class="text-xs text-light">x1</div>
+                        </div>
+                        <div class="ml-auto font-bold text-sm">$999.00</div>
+                    </div>
+
+                    <div style="border-top: 1px solid var(--color-border); padding-top: 1rem;">
+                        <div class="flex justify-between mb-sm font-bold">
+                            <span>Total</span>
+                            <span>$1,028.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-lg" style="display: block;">
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+                </a>
+                <p class="text-light" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    We are a creative social media agency helping brands grow their voice and identity in the digital
+                    space.
+                </p>
+                <div class="social-icons flex gap-sm">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Quick Links</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Resources</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="products.html">Shop Products</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Stay Updated</h4>
+                <form action="#" class="flex flex-col gap-sm">
+                    <input type="email" placeholder="Your email address" class="form-input" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-lg" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <p class="text-light" style="font-size: 0.875rem;">&copy; 2025 Bizu Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-utils flex items-center gap-sm">
+                <div class="search-wrapper" style="position: relative;">
+                    <input type="text" class="search-input form-input" placeholder="Search..."
+                        style="padding: 0.5rem; width: 150px; font-size: 0.875rem;">
+                    <div class="search-results card"
+                        style="display: none; position: absolute; top: 100%; right: 0; width: 250px; z-index: 1001; margin-top: 5px;">
+                    </div>
+                </div>
+                <a href="cart.html" class="cart-btn"
+                    style="position: relative; font-size: 1.25rem;"><span>🛒</span><span class="badg cart-badge"
+                        style="display: none;">0</span></a>
+                <button class="mobile-menu-btn btn btn-outline btn-sm" style="display: none;" aria-label="Toggle menu"
+                    aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero -->
+    <section class="section-padding" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="mb-lg">
+                <a href="portfolio.html" class="text-light hover:text-primary">&larr; Back to Portfolio</a>
+            </div>
+            <h1 class="mb-md">Neon Light Rebranding</h1>
+            <p class="text-light mb-lg project-desc" style="font-size: 1.25rem; max-width: 800px;">Energizing a startup
+                brand with a fresh, electric visual identity.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+            alt="Project Hero" class="hero-img"
+            style="width: 100%; height: 500px; object-fit: cover; display: block; border-radius: var(--radius-lg); box-shadow: var(--shadow-card);">
+    </section>
+
+    <!-- Project Info -->
+    <section class="section-padding"
+        style="background-color: var(--color-surface); margin-top: -80px; position: relative; z-index: 10; width: 90%; margin-left: auto; margin-right: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-card);">
+        <div class="container grid grid-3">
+            <div>
+                <h4 class="text-light text-sm uppercase mb-xs">Client</h4>
+                <p class="font-bold client-name">Neon Energy Co.</p>
+            </div>
+            <div>
+                <h4 class="text-light text-sm uppercase mb-xs">Category</h4>
+                <p class="font-bold category-name">Branding</p>
+            </div>
+            <div>
+                <h4 class="text-light text-sm uppercase mb-xs">Date</h4>
+                <p class="font-bold">June 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Content -->
+    <section class="section-padding">
+        <div class="container grid grid-2 gap-lg">
+            <div>
+                <h2 class="mb-md">The Challenge</h2>
+                <p class="text-light mb-lg">The client was entering a crowded market dominated by big players. Their
+                    original branding felt generic and didn't capture the essence of their product. They needed a visual
+                    identity that would pop on shelves and Instagram feeds alike.</p>
+
+                <h2 class="mb-md">The Solution</h2>
+                <p class="text-light">We stripped back the clutter and focused on high-contrast colors against dark
+                    backgrounds. We developed a custom look that feels energetic and motion-forward. For packaging, we
+                    used matte materials with spot-gloss elements.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Detail 1"
+                    style="border-radius: var(--radius-lg); margin-bottom: var(--spacing-md); width: 100%;">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Detail 2" style="border-radius: var(--radius-lg); width: 100%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--color-surface);">
+        <div class="container text-center">
+            <h2 class="mb-lg">The Result</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3 class="text-primary" style="font-size: 2.5rem;">+40%</h3>
+                    <p>Sales Increase in Q3</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-primary" style="font-size: 2.5rem;">15k</h3>
+                    <p>New Instagram Followers</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-primary" style="font-size: 2.5rem;">3</h3>
+                    <p>Design Awards Won</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding" style="margin-top: 4rem;">
+        <div class="container text-center">
+            <p class="text-light">&copy; 2025 Bizu Agency.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

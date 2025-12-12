@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color: var(--color-bg); min-height: 100vh; display: flex; flex-direction: column;">
+
+    <!-- Simplified Header for Auth -->
+    <header class="site-header" style="background: transparent; border: none;">
+        <div class="container text-center pt-lg">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 2rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex items-center justify-center flex-grow-1" style="padding: 2rem;">
+        <div class="card" style="width: 100%; max-width: 400px;">
+            <h2 class="text-center mb-md">Welcome Back</h2>
+            <p class="text-center text-light mb-lg">Please enter your details to sign in.</p>
+
+            <form action="#">
+                <div class="form-group">
+                    <label class="form-label">Email Address</label>
+                    <input type="email" class="form-input" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-input" required placeholder="••••••••">
+                </div>
+                <div class="flex justify-between items-center mb-lg">
+                    <label class="flex items-center gap-xs text-sm text-light">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="text-sm text-primary font-bold">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+
+            <div class="text-center mt-lg text-sm text-light">
+                Don't have an account? <a href="auth-signup.html" class="text-primary font-bold">Sign up</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer section-padding" style="margin-top: auto;">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-lg" style="display: block;">
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+                </a>
+                <p class="text-light" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    We are a creative social media agency helping brands grow their voice and identity in the digital
+                    space.
+                </p>
+                <div class="social-icons flex gap-sm">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Quick Links</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Resources</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="products.html">Shop Products</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Stay Updated</h4>
+                <form action="#" class="flex flex-col gap-sm">
+                    <input type="email" placeholder="Your email address" class="form-input" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-lg" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <p class="text-light" style="font-size: 0.875rem;">&copy; 2025 Bizu Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

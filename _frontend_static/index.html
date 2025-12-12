@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizu Agency | Creative Social Media Marketing</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header (Injected manually for static demo, normally partial) -->
+    <!-- Ideally, users will grab this block from /partials/_header.html -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-utils flex items-center gap-sm">
+                <div class="search-wrapper" style="position: relative;">
+                    <input type="text" class="search-input form-input" placeholder="Search..."
+                        style="padding: 0.5rem; width: 150px; font-size: 0.875rem;">
+                    <div class="search-results card"
+                        style="display: none; position: absolute; top: 100%; right: 0; width: 250px; z-index: 1001; margin-top: 5px;">
+                    </div>
+                </div>
+                <a href="cart.html" class="cart-btn" style="position: relative; font-size: 1.25rem;">
+                    <span>🛒</span>
+                    <span class="badg cart-badge" style="display: none;">0</span>
+                </a>
+                <div class="auth-buttons flex gap-sm" style="margin-left: var(--spacing-sm);">
+                    <a href="auth-login.html" class="btn btn-outline btn-sm">Login</a>
+                    <a href="auth-signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+                </div>
+                <button class="mobile-menu-btn btn btn-outline btn-sm" style="display: none;" aria-label="Toggle menu"
+                    aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section-padding">
+        <div class="container grid grid-2 items-center">
+            <div class="hero-content">
+                <h1 class="mb-lg">We Craft Digital Experiences That <span class="text-primary">Connect.</span></h1>
+                <p class="text-light mb-lg" style="font-size: 1.25rem;">
+                    Bizu is a full-service social media agency helping brands find their voice, grow their audience, and
+                    drive real results.
+                </p>
+                <div class="flex gap-sm">
+                    <a href="services.html" class="btn btn-primary">Our Services</a>
+                    <a href="portfolio.html" class="btn btn-outline">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Creative Agency Team"
+                    style="border-radius: var(--radius-lg); box-shadow: var(--shadow-hover);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section-padding" style="background-color: white;">
+        <div class="container">
+            <div class="flex justify-between items-center mb-lg">
+                <h2>Our Expertise</h2>
+                <a href="services.html" class="text-primary font-bold">View All &rarr;</a>
+            </div>
+            <div class="grid grid-3">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🚀</div>
+                    <h3>Social Strategy</h3>
+                    <p class="text-light mb-lg">Data-driven roadmaps to grow your brand across all platforms.</p>
+                    <a href="service-single.html" class="text-primary font-bold">Learn More</a>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🎨</div>
+                    <h3>Content Creation</h3>
+                    <p class="text-light mb-lg">Stunning visuals and copy that stop the scroll and engage users.</p>
+                    <a href="service-single.html" class="text-primary font-bold">Learn More</a>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">📈</div>
+                    <h3>Paid Advertising</h3>
+                    <p class="text-light mb-lg">High-ROI campaigns on Facebook, Instagram, and LinkedIn.</p>
+                    <a href="service-single.html" class="text-primary font-bold">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="flex justify-between items-center mb-lg">
+                <h2>Recent Work</h2>
+                <a href="portfolio.html" class="text-primary font-bold">View Portfolio &rarr;</a>
+            </div>
+            <div class="grid grid-2">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 1" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: var(--spacing-md);">
+                        <h3>TechStart Rebrand</h3>
+                        <p class="text-light">Brand Identity, Social Media</p>
+                    </div>
+                </div>
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Project 2" style="width: 100%; height: 300px; object-fit: cover;">
+                    <div style="padding: var(--spacing-md);">
+                        <h3>EcoLife Campaign</h3>
+                        <p class="text-light">Influencer Marketing, Content</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding"
+        style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Elevate Your Brand?</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">Join hundreds of satisfied clients who have transformed their
+                digital presence.</p>
+            <a href="contact.html" class="btn" style="background: white; color: var(--color-primary);">Get Started
+                Today</a>
+        </div>
+    </section>
+
+    <!-- Footer (Simulated Partial) -->
+    <footer class="site-footer section-padding">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-lg" style="display: block;">
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+                </a>
+                <p class="text-light" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    We are a creative social media agency helping brands grow their voice and identity in the digital
+                    space.
+                </p>
+                <div class="social-icons flex gap-sm">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Quick Links</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Resources</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="products.html">Shop Products</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Stay Updated</h4>
+                <form action="#" class="flex flex-col gap-sm">
+                    <input type="email" placeholder="Your email address" class="form-input" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-lg" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <p class="text-light" style="font-size: 0.875rem;">&copy; 2025 Bizu Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

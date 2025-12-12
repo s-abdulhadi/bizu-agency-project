@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-utils flex items-center gap-sm">
+                <div class="search-wrapper" style="position: relative;">
+                    <input type="text" class="search-input form-input" placeholder="Search..."
+                        style="padding: 0.5rem; width: 150px; font-size: 0.875rem;">
+                    <div class="search-results card"
+                        style="display: none; position: absolute; top: 100%; right: 0; width: 250px; z-index: 1001; margin-top: 5px;">
+                    </div>
+                </div>
+                <a href="cart.html" class="cart-btn"
+                    style="position: relative; font-size: 1.25rem;"><span>🛒</span><span class="badg cart-badge"
+                        style="display: none;">0</span></a>
+                <button class="mobile-menu-btn btn btn-outline btn-sm" style="display: none;" aria-label="Toggle menu"
+                    aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-surface);">
+        <div class="container text-center">
+            <h1 class="mb-sm">Our Expertise</h1>
+            <p class="text-light" style="max-width: 600px; margin: 0 auto;">Comprehensive solutions to elevate your
+                brand presence.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container grid grid-3">
+            <!-- Service 1 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚀</div>
+                <h3>Social Media Management</h3>
+                <p class="text-light mb-lg">Full-service management of your Instagram, TikTok, and LinkedIn profiles.
+                </p>
+                <div class="mb-md text-primary font-bold">Starting at $999/mo</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=social" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎨</div>
+                <h3>Content Creation</h3>
+                <p class="text-light mb-lg">Professional photography, videography, and graphic design.</p>
+                <div class="mb-md text-primary font-bold">Starting at $500/mo</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=content" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📈</div>
+                <h3>Paid Advertising</h3>
+                <p class="text-light mb-lg">ROI-focused ad campaigns on Meta and Google.</p>
+                <div class="mb-md text-primary font-bold">Custom Pricing</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=ads" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔍</div>
+                <h3>SEO Optimization</h3>
+                <p class="text-light mb-lg">Rank higher on Google and drive organic traffic.</p>
+                <div class="mb-md text-primary font-bold">Starting at $750/mo</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=seo" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📧</div>
+                <h3>Email Marketing</h3>
+                <p class="text-light mb-lg">Engage your audience with targeted newsletters.</p>
+                <div class="mb-md text-primary font-bold">Starting at $300/mo</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=ads" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="card">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">💡</div>
+                <h3>Web Development</h3>
+                <p class="text-light mb-lg">Pixel-perfect websites that convert visitors into customers.</p>
+                <div class="mb-md text-primary font-bold">Starting at $3500</div>
+                <div class="flex gap-sm">
+                    <a href="service-single.html?id=web" class="btn btn-primary btn-sm">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding" style="margin-top: 4rem;">
+        <div class="container text-center">
+            <p class="text-light">&copy; 2025 Bizu Agency.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

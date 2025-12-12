@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Portfolio | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .admin-sidebar {
+            width: 250px;
+            background-color: white;
+            border-right: 1px solid var(--color-border);
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            padding: 2rem 1rem;
+        }
+
+        .admin-content {
+            margin-left: 250px;
+            padding: 2rem;
+        }
+
+        .admin-nav-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--color-text-light);
+            border-radius: var(--radius-sm);
+            margin-bottom: 0.5rem;
+        }
+
+        .admin-nav-link.active,
+        .admin-nav-link:hover {
+            background-color: rgba(108, 92, 231, 0.1);
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+        }
+
+        .table th,
+        .table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--color-text-light);
+        }
+    </style>
+</head>
+
+<body style="background-color: var(--color-bg);">
+
+    <div class="admin-sidebar">
+        <a href="index.html" class="logo mb-xl" style="display: block;">
+            <span
+                style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu
+                Admin.</span>
+        </a>
+        <nav>
+            <a href="#" class="admin-nav-link">Dashboard</a>
+            <a href="admin-services-list.html" class="admin-nav-link">Services</a>
+            <a href="admin-portfolio-list.html" class="admin-nav-link active">Portfolio</a>
+            <a href="admin-products-list.html" class="admin-nav-link">Products</a>
+            <a href="#" class="admin-nav-link">Users</a>
+            <a href="#" class="admin-nav-link">Settings</a>
+            <a href="index.html" class="admin-nav-link mt-xl text-error">Logout</a>
+        </nav>
+    </div>
+
+    <div class="admin-content">
+        <div class="flex justify-between items-center mb-lg">
+            <h1>Portfolio</h1>
+            <a href="admin-portfolio-form.html" class="btn btn-primary">+ New Project</a>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Project Name</th>
+                    <th>Client</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80"
+                            style="width: 40px; height: 40px; border-radius: 4px; object-fit: cover;"></td>
+                    <td>Neon Light</td>
+                    <td>Neon Energy Co.</td>
+                    <td>Branding</td>
+                    <td>
+                        <a href="admin-portfolio-form.html"
+                            style="color: var(--color-primary); margin-right: 10px;">Edit</a>
+                        <a href="#" style="color: var(--color-error);">Delete</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1516251193000-18e658a25c7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80"
+                            style="width: 40px; height: 40px; border-radius: 4px; object-fit: cover;"></td>
+                    <td>Tech Week</td>
+                    <td>Conf Inc.</td>
+                    <td>Social Media</td>
+                    <td>
+                        <a href="admin-portfolio-form.html"
+                            style="color: var(--color-primary); margin-right: 10px;">Edit</a>
+                        <a href="#" style="color: var(--color-error);">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

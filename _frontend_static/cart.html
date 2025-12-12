@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart-table th,
+        .cart-table td {
+            padding: var(--spacing-sm);
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .cart-table th {
+            color: var(--color-text-light);
+            font-weight: 500;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+        }
+
+        .qty-btn {
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="header-utils flex items-center gap-sm">
+                <!-- Utils same as other pages -->
+                <div class="search-wrapper" style="position: relative;">
+                    <input type="text" class="search-input form-input" placeholder="Search..."
+                        style="padding: 0.5rem; width: 150px; font-size: 0.875rem;">
+                    <div class="search-results card"
+                        style="display: none; position: absolute; top: 100%; right: 0; width: 250px; z-index: 1001; margin-top: 5px;">
+                    </div>
+                </div>
+                <a href="cart.html" class="cart-btn"
+                    style="position: relative; font-size: 1.25rem;"><span>🛒</span><span class="badg cart-badge"
+                        style="display: inline;">2</span></a>
+                <button class="mobile-menu-btn btn btn-outline btn-sm" style="display: none;" aria-label="Toggle menu"
+                    aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-surface);">
+        <div class="container text-center">
+            <h1 class="mb-sm">Shopping Cart</h1>
+            <p class="text-light">Review your items before checkout.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container grid grid-3 gap-lg" style="grid-template-columns: 2fr 1fr;">
+            <!-- Cart Items -->
+            <div class="card">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-sm">
+                                    <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Thumb"
+                                        style="width: 50px; height: 50px; border-radius: 4px; object-fit: cover;">
+                                    <div>
+                                        <div class="font-bold">Minimalist IG Bundle</div>
+                                        <div class="text-xs text-light">Digital Download</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$29.00</td>
+                            <td>
+                                <div class="flex items-center gap-xs">
+                                    <button class="qty-btn">-</button>
+                                    <input type="text" value="1"
+                                        style="width: 30px; text-align: center; border: 1px solid #ddd; border-radius: 4px; padding: 4px;">
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </td>
+                            <td class="font-bold">$29.00</td>
+                            <td class="text-error cursor-pointer">✕</td>
+                        </tr>
+                        <!-- Item 2 -->
+                        <tr>
+                            <td>
+                                <div class="flex items-center gap-sm">
+                                    <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                                        alt="Thumb"
+                                        style="width: 50px; height: 50px; border-radius: 4px; object-fit: cover;">
+                                    <div>
+                                        <div class="font-bold">Social Media Mgmt</div>
+                                        <div class="text-xs text-light">Monthly Service</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$999.00</td>
+                            <td>
+                                <div class="flex items-center gap-xs">
+                                    <button class="qty-btn">-</button>
+                                    <input type="text" value="1"
+                                        style="width: 30px; text-align: center; border: 1px solid #ddd; border-radius: 4px; padding: 4px;">
+                                    <button class="qty-btn">+</button>
+                                </div>
+                            </td>
+                            <td class="font-bold">$999.00</td>
+                            <td class="text-error cursor-pointer">✕</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="mt-lg">
+                    <a href="products.html" class="text-primary font-bold">&larr; Continue Shopping</a>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div>
+                <div class="card">
+                    <h3 class="mb-md">Order Summary</h3>
+                    <div class="flex justify-between mb-sm text-sm">
+                        <span>Subtotal</span>
+                        <span>$1,028.00</span>
+                    </div>
+                    <div class="flex justify-between mb-sm text-sm">
+                        <span>Tax (Estimated)</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="flex justify-between mb-lg text-sm border-bottom pb-sm"
+                        style="border-bottom: 1px solid var(--color-border);">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="flex justify-between mb-lg font-bold text-lg">
+                        <span>Total</span>
+                        <span>$1,028.00</span>
+                    </div>
+
+                    <div class="mb-md">
+                        <input type="text" class="form-input mb-xs" placeholder="Promo Code">
+                        <button class="btn btn-outline btn-sm" style="width: 100%;">Apply Code</button>
+                    </div>
+
+                    <a href="checkout.html" class="btn btn-primary" style="width: 100%;">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-lg" style="display: block;">
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+                </a>
+                <p class="text-light" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    We are a creative social media agency helping brands grow their voice and identity in the digital
+                    space.
+                </p>
+                <div class="social-icons flex gap-sm">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Quick Links</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Resources</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="products.html">Shop Products</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Stay Updated</h4>
+                <form action="#" class="flex flex-col gap-sm">
+                    <input type="email" placeholder="Your email address" class="form-input" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-lg" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <p class="text-light" style="font-size: 0.875rem;">&copy; 2025 Bizu Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bizu Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container flex justify-between items-center">
+            <a href="index.html" class="logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="testimonials.html" class="nav-link">Testimonials</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="header-utils flex items-center gap-sm">
+                <div class="search-wrapper" style="position: relative;">
+                    <input type="text" class="search-input form-input" placeholder="Search..."
+                        style="padding: 0.5rem; width: 150px; font-size: 0.875rem;">
+                    <div class="search-results card"
+                        style="display: none; position: absolute; top: 100%; right: 0; width: 250px; z-index: 1001; margin-top: 5px;">
+                    </div>
+                </div>
+                <!-- Cart & Auth similar to other pages -->
+                <a href="cart.html" class="cart-btn"
+                    style="position: relative; font-size: 1.25rem;"><span>🛒</span><span class="badg cart-badge"
+                        style="display: none;">0</span></a>
+                <button class="mobile-menu-btn btn btn-outline btn-sm" style="display: none;" aria-label="Toggle menu"
+                    aria-expanded="false">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header section-padding" style="background-color: var(--color-surface);">
+        <div class="container text-center">
+            <h1 class="mb-sm">Let's Connect</h1>
+            <p class="text-light" style="max-width: 600px; margin: 0 auto;">Have a project in mind? We'd love to hear
+                from you.</p>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container grid grid-2">
+            <!-- Contact Info -->
+            <div>
+                <h2 class="mb-md">Get in Touch</h2>
+                <div class="mb-lg">
+                    <h3 style="font-size: 1.25rem;">📍 Visit Us</h3>
+                    <p class="text-light">123 Creative Ave, Design District<br>New York, NY 10012</p>
+                </div>
+                <div class="mb-lg">
+                    <h3 style="font-size: 1.25rem;">📧 Email Us</h3>
+                    <p class="text-light"><a href="mailto:hello@bizu.agency">hello@bizu.agency</a></p>
+                </div>
+                <div class="mb-lg">
+                    <h3 style="font-size: 1.25rem;">📞 Call Us</h3>
+                    <p class="text-light">+1 (555) 123-4567</p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="card">
+                <form action="#" novalidate>
+                    <div class="form-group">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" class="form-input" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Subject</label>
+                        <select class="form-select" required>
+                            <option value="">Select a topic...</option>
+                            <option value="project">New Project</option>
+                            <option value="job">Careers</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" rows="5" required
+                            placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Attachment (Optional)</label>
+                        <input type="file" class="form-input" data-preview="contact-preview">
+                        <img id="contact-preview" src="#" alt="Preview"
+                            style="display: none; width: 100px; margin-top: 10px; border-radius: var(--radius-sm);">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer section-padding">
+        <div class="container grid grid-4">
+            <div class="footer-col">
+                <a href="index.html" class="logo mb-lg" style="display: block;">
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-primary);">Bizu.</span>
+                </a>
+                <p class="text-light" style="font-size: 0.9rem; margin-bottom: 1rem;">
+                    We are a creative social media agency helping brands grow their voice and identity in the digital
+                    space.
+                </p>
+                <div class="social-icons flex gap-sm">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Quick Links</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Resources</h4>
+                <ul class="flex flex-col gap-sm text-light">
+                    <li><a href="products.html">Shop Products</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="mb-lg">Stay Updated</h4>
+                <form action="#" class="flex flex-col gap-sm">
+                    <input type="email" placeholder="Your email address" class="form-input" required>
+                    <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container text-center mt-lg" style="border-top: 1px solid var(--color-border); padding-top: 2rem;">
+            <p class="text-light" style="font-size: 0.875rem;">&copy; 2025 Bizu Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
