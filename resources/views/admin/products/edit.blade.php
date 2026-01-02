@@ -22,9 +22,10 @@
 
             <div class="mb-lg">
                 <label for="name" class="block mb-sm font-bold">Product Name</label>
-                <input type="text" name="name" id="name" class="form-control" value="{{ $product->name }}"
-                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;"
+                <input type="text" name="name" id="name" class="form-control" value="{{ old('name', $product->name) }}"
+                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem; @error('name') border-color: red; @enderror"
                     required>
+                @error('name') <p style="color: red; font-size: 0.8rem; margin-top: 0.25rem;">{{ $message }}</p> @enderror
             </div>
 
             <div class="mb-lg">
@@ -34,7 +35,7 @@
                     required>
                     <option value="">-- Select Category --</option>
                     @foreach($categories as $category)
-                        <option value="{{ $category->id }}" {{ $product->category_id == $category->id ? 'selected' : '' }}>
+                        <option value="{{ $category->id }}" {{ old('category_id', $product->category_id) == $category->id ? 'selected' : '' }}>
                             {{ $category->name }}
                         </option>
                     @endforeach
@@ -69,26 +70,27 @@
             <div class="mb-lg">
                 <label for="short_description" class="block mb-sm font-bold">Short Description</label>
                 <textarea name="short_description" id="short_description" rows="3" class="form-control"
-                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">{{ $product->short_description }}</textarea>
+                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">{{ old('short_description', $product->short_description) }}</textarea>
             </div>
 
             <div class="mb-lg">
                 <label for="full_description" class="block mb-sm font-bold">Full Description</label>
                 <textarea name="full_description" id="full_description" rows="6" class="form-control"
-                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">{{ $product->full_description }}</textarea>
+                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">{{ old('full_description', $product->full_description) }}</textarea>
             </div>
 
             <div class="grid grid-2 gap-md mb-lg">
                 <div>
                     <label for="price" class="block mb-sm font-bold">Price ($)</label>
                     <input type="number" step="0.01" name="price" id="price" class="form-control"
-                        value="{{ $product->price }}"
+                        value="{{ old('price', $product->price) }}"
                         style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;"
                         required>
                 </div>
                 <div>
                     <label for="stock" class="block mb-sm font-bold">Stock Quantity</label>
-                    <input type="number" name="stock" id="stock" class="form-control" value="{{ $product->stock }}"
+                    <input type="number" name="stock" id="stock" class="form-control"
+                        value="{{ old('stock', $product->stock) }}"
                         style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">
                 </div>
             </div>
@@ -97,8 +99,8 @@
                 <label for="featured" class="block mb-sm font-bold">Featured Product?</label>
                 <select name="featured" id="featured"
                     style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 0.375rem;">
-                    <option value="0" {{ !$product->featured ? 'selected' : '' }}>No</option>
-                    <option value="1" {{ $product->featured ? 'selected' : '' }}>Yes</option>
+                    <option value="0" {{ old('featured', $product->featured) == 0 ? 'selected' : '' }}>No</option>
+                    <option value="1" {{ old('featured', $product->featured) == 1 ? 'selected' : '' }}>Yes</option>
                 </select>
             </div>
 

@@ -273,6 +273,31 @@
         </header>
 
         <div class="content-area">
+            @if (session('success'))
+                <div
+                    style="background: #D1FAE5; color: #065F46; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem; border: 1px solid #10B981;">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            @if (session('error'))
+                <div
+                    style="background: #FEE2E2; color: #991B1B; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem; border: 1px solid #EF4444;">
+                    {{ session('error') }}
+                </div>
+            @endif
+
+            @if ($errors->any())
+                <div
+                    style="background: #FFFBEB; color: #92400E; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem; border: 1px solid #F59E0B;">
+                    <ul style="margin-left: 1.5rem;">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             @yield('content')
         </div>
     </main>
